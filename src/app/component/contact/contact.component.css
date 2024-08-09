@@ -1,63 +1,141 @@
+/* Original styles */
+
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-      background-color: #f9f9f9;
-  }
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #333;
-  }
-   
-  .contact h2 {
-    margin-bottom: 1.5rem;
-  }
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contact h2 {
+  margin-bottom: 1.5rem;
+}
+
+.contact form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  background-color: #84c9d0;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #276263;
+}
+
+p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* Media Queries for Tablet and Mobile */
+
+@media (max-width: 1200px) {
   .contact form {
-    width: 100%;
-    max-width: 600px;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
   }
-   
   .form-group {
     margin-bottom: 1rem;
   }
-   
-  .form-group label {
-    display: block;
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact form {
+    padding: 1rem;
+  }
+  .form-group {
+    margin-bottom: 0.75rem;
+  }
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  button {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact form {
+    padding: 0.5rem;
+  }
+  .form-group {
     margin-bottom: 0.5rem;
   }
-   
-  .form-group input, .form-group textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  .form-group input,
+  .form-group textarea {
+    padding: 0.25rem;
+    font-size: 0.75rem;
   }
-   
   button {
-    background-color: #84c9d0;
-    color: #fff;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+    padding: 0.25rem;
+    font-size: 0.75rem;
   }
-   
-  button:hover {
-    background-color: #276263;
-  }
-   
   p {
-    margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
+}

@@ -6,13 +6,13 @@ import { NavComponent } from './component/nav/nav.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { OrderComponent } from './component/order/order.component';
 import { PayComponent } from './component/pay/pay.component';
-import { StoreComponent } from './component/store/store.component';
+import { aboutusComponent } from './component/aboutus/aboutus.component'; 
 import { GiftComponent } from './component/gift/gift.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, HeaderComponent, NavComponent, FooterComponent, OrderComponent,PayComponent,StoreComponent, GiftComponent],
+  imports: [RouterOutlet, HomeComponent, HeaderComponent, NavComponent, FooterComponent, OrderComponent,PayComponent,aboutusComponent, GiftComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

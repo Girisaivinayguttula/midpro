@@ -1,4 +1,152 @@
-p{
-    height: 404px;
-    width: 150px;
-}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #213D2D;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .breadcrumb {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header h1 {
+    color: #1E3932;
+    font-size: 24px;
+  }
+  
+  .add-card-btn {
+    background-color: #006341;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    width: 320px; /* Specific width based on image proportions */
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-image img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-details {
+    padding: 10px 0;
+    flex-grow: 1;
+  }
+  
+  .card-name {
+    display: block;
+    font-weight: bold;
+    color: #1E3932;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .card-balance {
+    color: #006341;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .card-update-time {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .load-card-btn {
+    background-color: #006341;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .card-settings {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .settings-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .add-new-card {
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    width: 320px;
+    height: 200px; /* Matching the height of the card on the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .add-card-content {
+    padding: 20px;
+    color: #666;
+  }
+  
+  .add-icon {
+    font-size: 36px;
+    color: #006341;
+    margin-bottom: 10px;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .footer button {
+    background-color: #006341;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48%;
+  }
+  
