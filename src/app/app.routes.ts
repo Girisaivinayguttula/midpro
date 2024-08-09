@@ -4,6 +4,7 @@ import { GiftComponent } from './component/gift/gift.component';
 import { OrderComponent } from './component/order/order.component';
 import { PayComponent } from './component/pay/pay.component';
 import { StoreComponent } from './component/store/store.component';
+import { ContactComponent } from './component/contact/contact.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -12,4 +13,5 @@ export const routes: Routes = [
   { path: 'order', component: OrderComponent, data: { title: 'Order' } },
   { path: 'pay', component: PayComponent, data: { title: 'Pay' } },
   { path: 'store', component: StoreComponent, data: { title: 'Store' } },
+  { path: 'contact', component: ContactComponent, data: { title: 'Contact' } }
 ];

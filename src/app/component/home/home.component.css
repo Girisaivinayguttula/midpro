@@ -1,19 +1,87 @@
-div {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  app-header,
-  app-footer {
-    flex-shrink: 0;
-  }
-  
-  app-navbar {
-    flex-shrink: 0;
-  }
-  
-  router-outlet {
-    flex-grow: 1;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+  background-color: #008080;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.banner-left {
+  text-align: left;
+}
+
+.banner-left h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.banner-left h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner-left p {
+  font-size: 16px;
+}
+
+.banner-right {
+  margin-left: auto;
+}
+
+.banner-right button {
+  background-color: white;
+  color: #008080;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.curations {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.curations h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.curations-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.curation-item {
+  text-align: center;
+  width: 120px;
+}
+
+.curation-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.curation-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}

@@ -1,27 +1,83 @@
-nav {
-    background-color: #333;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  
+/* Container styling */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo styling */
+.logo img {
+  height: 40px;
+  font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* Navigation links styling */
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: SoDoSans_Semibold, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #00754a; /* Starbucks green color */
+  border-bottom: 2px solid #00754a;
+}
+
+/* Search bar styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 25px;
+  padding: 5px 10px;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 5px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search-container i {
+  color: #888;
+}
+
+/* Profile icon styling */
+.profile-icon {
+  font-size: 24px;
+  color: #333;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.profile-icon:hover {
+  color: #00754a;
+}
