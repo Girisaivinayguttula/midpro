@@ -1,17 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [RouterOutlet, RouterModule],
+  imports: [RouterOutlet, RouterModule, NgClass],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-  menuActive: boolean = false;
+  isMenuOpen = false;
 
   toggleMenu() {
-    this.menuActive = !this.menuActive;
-}
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  closeMenu() {
+    this.isMenuOpen = false;
+  }
 }

@@ -1,10 +1,35 @@
 header {
-    background-color: #113b12;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin: 0%;
-    padding: 8px;
-  }
+  background-color: #113b12;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  padding: 8px;
+}
 
-  
+/* For small screens (e.g. mobile devices) */
+@media only screen and (max-width: 600px) {
+header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+/* For medium screens (e.g. tablets) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+header {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+/* For large screens (e.g. desktop devices) */
+@media only screen and (min-width: 901px) {
+header {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+}

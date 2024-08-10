@@ -12,23 +12,34 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+}
+
+.nav-left {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .nav-left a {
     color: white;
     text-decoration: none;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .nav-right {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-left: auto;
 }
 
 .store-info, .order-info {
@@ -36,7 +47,9 @@ body {
 }
 
 .order-options {
+    display: flex;
     margin-left: auto;
+    flex-wrap: wrap;
 }
 
 .order-options button {
@@ -45,7 +58,9 @@ body {
     border: 1px solid white;
     padding: 8px 16px;
     margin-left: 10px;
+    margin-top: 5px;
     cursor: pointer;
+    flex-basis: 45%;
 }
 
 .tabs {
@@ -54,12 +69,15 @@ body {
     padding: 10px 20px;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .tab {
     color: #6b6b6b;
     text-decoration: none;
     padding-bottom: 10px;
+    flex-basis: calc(100% / 3);
+    text-align: center;
 }
 
 .tab.active {
@@ -77,11 +95,15 @@ body {
 
 .content h2 {
     color: #2e463a;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .items {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .item-card {
@@ -89,14 +111,17 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
-    width: 300px;
+    width: calc(100% - 40px); /* Ensures full-width on mobile */
+    max-width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 0 auto;
 }
 
 .item-card img {
     width: 100%;
-    height: 200px;
+    height: auto;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -127,4 +152,44 @@ body {
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (min-width: 768px) {
+    .header {
+        flex-wrap: nowrap;
+    }
+
+    .nav-left a {
+        margin-bottom: 0;
+    }
+
+    .nav-right {
+        margin-top: 0;
+    }
+
+    .order-options button {
+        flex-basis: auto;
+    }
+
+    .tab {
+        flex-basis: auto;
+        text-align: left;
+    }
+
+    .items {
+        justify-content: flex-start;
+    }
+
+    .item-card {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content {
+        margin: 20px auto;
+        max-width: 1200px;
+    }
 }

@@ -1,41 +1,40 @@
 <div class="container">
-    <div class="breadcrumb">
-      <span>Home</span> &gt; <span>Starbucks Pay</span>
-    </div>
-    
-    <div class="header">
-      <h1>My Starbucks Cards</h1>
-      <button class="add-card-btn" onclick="window.location.href='#'">Add Card</button>
-    </div>
-    
-    <div class="cards-container">
-      <div class="card">
-        <div class="card-image">
-          <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/c08a5364_1d63_4d53_8bba_6b95bd1b05fe_6_90ea914d7c.png" alt="Starbucks Card">
-        </div>
-        <div class="card-details">
-          <span class="card-name">Aroma | *9419</span>
-          <span class="card-balance">₹0.00</span>
-          <span class="card-update-time">Updated at 11:20 AM on 14/05/2023</span>
-          <button class="load-card-btn" onclick="window.location.href='#'">Load Card</button>
-        </div>
-        <div class="card-settings">
-          <i class="settings-icon">&#9881;</i>
-        </div>
+  <div class="breadcrumb">
+    <span>Home</span> &gt; <span>Starbucks Pay</span>
+  </div>
+  
+  <div class="header">
+    <h1>My Starbucks Cards</h1>
+    <button class="add-card-btn" onclick="window.location.href='#'">Add Card</button>
+  </div>
+  
+  <div class="cards-container">
+    <div class="card">
+      <div class="card-image">
+        <img src="https://preprodtsbstorage.blob.core.windows.net/cms/uploads/c08a5364_1d63_4d53_8bba_6b95bd1b05fe_6_90ea914d7c.png" alt="Starbucks Card">
       </div>
-      
-      <div class="card add-new-card">
-        <div class="add-card-content">
-          <i class="add-icon">+</i>
-          <span>Add new Starbucks card</span>
-        </div>
-        <button class="add-card-btn" onclick="window.location.href='#'">Add Card</button>
+      <div class="card-details">
+        <span class="card-name">Aroma | *9419</span>
+        <span class="card-balance">₹0.00</span>
+        <span class="card-update-time">Updated at 11:20 AM on 14/05/2023</span>
+        <button class="load-card-btn" (click)="loadCard()">Load Card</button>
+      </div>
+      <div class="card-settings">
+        <i class="settings-icon">&#9881;</i>
       </div>
     </div>
     
-    <div class="footer">
-      <button class="pay-store-btn">Pay at Store</button>
-      <button class="past-transactions-btn" onclick="window.location.href='#'">Past Transactions</button>
+    <div class="card add-new-card">
+      <div class="add-card-content">
+        <i class="add-icon">+</i>
+        <span>Add new Starbucks card</span>
+      </div>
+      <button class="add-card-btn" (click)="loadCard()">Add Card</button>
     </div>
   </div>
   
+  <div class="footer">
+    <button class="pay-store-btn">Pay at Store</button>
+    <button class="past-transactions-btn" (click)="loadCard()">Past Transactions</button>
+  </div>
+</div>

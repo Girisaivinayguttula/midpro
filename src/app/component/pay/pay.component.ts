@@ -3,10 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-pay',
   standalone: true,
-  imports: [],
   templateUrl: './pay.component.html',
-  styleUrl: './pay.component.css'
+  styleUrls: ['./pay.component.css']
 })
 export class PayComponent {
-
+  loadCard() {
+    // This method can be tested for being called on button click
+    window.location.href = '#'; // Simulate navigation
+  }
 }

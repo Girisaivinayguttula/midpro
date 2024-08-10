@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-
 import { ContactService } from '../../contact.service';
 
 @Component({
   selector: 'app-contact',
-  standalone: true,  // Standalone component if used
-  imports: [FormsModule,CommonModule],  // Ensure FormsModule is imported if standalone
+  standalone: true,  
+  imports: [FormsModule,CommonModule], 
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })

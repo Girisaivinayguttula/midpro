@@ -1,11 +1,35 @@
 footer {
-    background-color: #154216;
-    color: white;
-    text-align: center;
-    margin: 0%;
-    padding: 12.3px;
+  background-color: #154216;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  padding-right: 0%;
+  padding-left: 0%;
+  width: 100%; 
+}
+
+p {
+  font-size: 12px; 
+  margin: 0; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  footer {
+      padding: 10px; /* Adjust padding for smaller screens */
   }
-  
-  p{
-    font-size: x-small;
+
+  p {
+      font-size: 10px; /* Slightly smaller font size on mobile */
   }
+}
+
+@media (max-width: 480px) {
+  footer {
+      padding: 8px; /* Further reduce padding for very small screens */
+  }
+
+  p {
+      font-size: 9px; /* Even smaller font size for extra small screens */
+  }
+}

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HomeComponent } from './component/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { NavComponent } from './component/nav/nav.component';
@@ -12,7 +12,7 @@ import { GiftComponent } from './component/gift/gift.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, HeaderComponent, NavComponent, FooterComponent, OrderComponent,PayComponent,aboutusComponent, GiftComponent],
+  imports: [RouterOutlet, HomeComponent, HeaderComponent, NavComponent, FooterComponent, OrderComponent,PayComponent,aboutusComponent, GiftComponent, RouterModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
